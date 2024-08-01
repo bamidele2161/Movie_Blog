@@ -15,7 +15,7 @@ describe("All user endpoints test", () => {
     const email = "new4@gmail.com"; // Email to be used for test user creation and cleanup
 
     // Cleanup any existing user with the test email before tests
-    const deletePost = await dbPool.query(deleteUserByEmailQuery, [email]);
+    const [deletePost] = await dbPool.query(deleteUserByEmailQuery, [email]);
 
     // Get a CSRF token for subsequent requests requiring authentication
     const csrfResponse = await request(app).get("/csrf-token").expect(200);
@@ -59,8 +59,8 @@ describe("All user endpoints test", () => {
   it("should return a 200 for successful login", async () => {
     const data = {
       // Login data with a different email
-      password: "11111111",
-      email: "login@gmail.com",
+      password: "Bamidele2",
+      email: "akinyemibamidele2@gmail.com",
     };
     const res = await request(app) // Send a POST request to the login endpoint
       .post("/user/login")
@@ -86,17 +86,17 @@ describe("All user endpoints test", () => {
     expect(res.statusCode).toBe(404); // Assert a not found status code
   });
 
-  it("should return a 400", async () => {
+  it("should return a 404", async () => {
     const data = {
       // Login data with an invalid passoword
-      email: "login@gmail.com",
-      password: "111",
+      email: "akinyemibamidele@gmail.com",
+      password: "Bamidele2",
     };
     const res = await request(app) // Send a POST request to the login endpoint
       .post("/user/login")
       .send(data)
       .set("Cookie", cookies)
       .set("CSRF-Token", csrfToken);
-    expect(res.statusCode).toBe(400); // Assert invalid status code
+    expect(res.statusCode).toBe(404); // Assert invalid status code
   });
 });

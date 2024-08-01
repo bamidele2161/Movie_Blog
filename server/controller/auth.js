@@ -46,7 +46,6 @@ exports.UserRegistration = async (req, res, next) => {
       statusCode: createUser.statusCode,
     });
   } catch (error) {
-    console.log(error);
     next(error);
   }
 };

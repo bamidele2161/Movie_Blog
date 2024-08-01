@@ -42,9 +42,9 @@ const updateUserResetCodeByIdQuery = `
 
 // SQL query to delete a user by email
 const deleteUserByEmailQuery = `
-  DELETE FROM "users"
+  DELETE FROM users
   WHERE email = ?
-  RETURNING *
+
 `;
 
 // Export all SQL queries for use in other modules
