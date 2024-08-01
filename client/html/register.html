@@ -1,0 +1,60 @@
+<span style="font-family: verdana, geneva, sans-serif"
+  ><!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Registration</title>
+      <link rel="stylesheet" href="../css/auth.css" />
+      <!-- Font Awesome Cdn Link -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+      <script
+        src="https://kit.fontawesome.com/64d58efce2.js"
+        crossorigin="anonymous"
+        anonymous
+      ></script>
+    </head>
+    <body>
+      <div id="success" class="success"></div>
+      <div id="error" class="error"></div>
+
+      <nav class="navbar">
+        <img src="../images/blue-logo.png" class="logo" alt="" />
+        <ul class="links-container">
+          <li class="link-item"><a href="./home.html" class="link">HOME</a></li>
+
+          <li class="link-item">
+            <a href="./login.html" class="link">LOGIN</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="component">
+        <div class="wrapper">
+          <h1>Register</h1>
+          <p>Enter your details below <br /></p>
+          <form>
+            <input type="text" placeholder="First name" id="firstname" />
+            <div id="firstErr" class="errorField"></div>
+            <input type="text" placeholder="Last name" id="lastname" />
+            <div id="lastErr" class="errorField"></div>
+            <input type="email" placeholder="Email" id="email" />
+            <div id="emailErr" class="errorField"></div>
+            <input type="password" placeholder="Password" id="password" />
+            <div id="passwordErr" class="errorField"></div>
+          </form>
+
+          <button id="submit-btn">Sign up</button>
+
+          <div class="not-member">
+            Alredy a member? <a href="./login.html">Login</a>
+          </div>
+        </div>
+      </div>
+
+      <script type="module" src="../js/register.js"></script>
+    </body>
+  </html>
+</span>

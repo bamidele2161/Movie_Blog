@@ -1,0 +1,48 @@
+<span style="font-family: verdana, geneva, sans-serif"
+  ><!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Login form</title>
+      <link rel="stylesheet" href="../css/auth.css" />
+      <!-- Font Awesome Cdn Link -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+    </head>
+    <body>
+      <div id="success" class="success"></div>
+      <div id="error" class="error"></div>
+
+      <nav class="navbar">
+        <img src="../images/blue-logo.png" class="logo" alt="" />
+        <ul class="links-container">
+          <li class="link-item"><a href="./home.html" class="link">HOME</a></li>
+          <li class="link-item">
+            <a href="./register.html" class="link">SIGN UP</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="component">
+        <div class="wrapper">
+          <h1>OTP Code</h1>
+          <p>Provide your code</p>
+          <form>
+            <input type="text" placeholder="Code" id="code" />
+            <div id="emailErr" class="errorField"></div>
+          </form>
+
+          <button id="submit-btn">Submit</button>
+
+          <div class="not-member">
+            Remember Password? <a href="./login.html">Sign In</a>
+          </div>
+        </div>
+      </div>
+
+      <script type="module" src="../js/otp.js"></script>
+    </body>
+  </html>
+</span>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JET Movie Movieger</title>
+    <!-- Box-icon -->
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+      anonymous
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="../images/blue-logo.png" class="hm-logo" alt="" />
+      <ul class="links-container">
+        <li class="link-item"><a href="./home.html" class="link">HOME</a></li>
+        <li class="link-item">
+          <a href="./post.html" class="link">CREATE</a>
+        </li>
+        <li class="link-item">
+          <a href="./mypost.html" class="link">POSTS</a>
+        </li>
+      </ul>
+
+      <ul class="links-container">
+        <li class="link-item">
+          <a href="./login.html" class="link">LOGIN</a>
+        </li>
+        <li class="link-item">
+          <a href="./register.html" class="link">SIGN UP</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- <section class="home" id="home"> -->
+    <div class="hero">
+      <div class="left">
+        <h2 class="home-title">JET Movie Blog</h2>
+        <span class="home-subtitle"
+          >Your go-to destination for movie reviews, news, and insights. Dive
+          into the world of cinema with us!</span
+        >
+      </div>
+      <div class="right">
+        <img src="../images/mn.jpg" class="m-logo" alt="" />
+      </div>
+    </div>
+
+    <!-- <div class="home-text container">
+        <h2 class="home-title">JET Movie Blog</h2>
+        <span class="home-subtitle">Your source of great movies</span>
+      </div> -->
+    <!-- </section> -->
+
+    <div class="d-section">
+      <h2 class="postsHeader">Posts</h2>
+      <div class="search-field">
+        <div class="search-wrap">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="search" id="searchQuery" />
+        </div>
+      </div>
+
+      <div class="post container" id="movies-section"></div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="sec aboutus">
+          <h2>About Us</h2>
+          <p>
+            Jet Movie is your go-to destination for movie reviews, news, and
+            insights. Dive into the world of cinema with us!.
+          </p>
+          <ul class="sci">
+            <li>
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="sec contactBx">
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><i class="bx bxs-map"></i></span>
+              <span
+                >London Univerisity <br />
+                Brighton <br />
+                Uk</span
+              >
+            </li>
+            <li>
+              <span><i class="bx bx-envelope"></i></span>
+              <p>
+                <a href="mailto:bb@gmail.com">bb@uea.ac.uk</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <script type="module" src="../js/home.js"></script>
+  </body>
+</html>

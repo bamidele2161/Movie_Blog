@@ -1,0 +1,69 @@
+<span style="font-family: verdana, geneva, sans-serif"
+  ><!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Create Post</title>
+      <link rel="stylesheet" href="../css/auth.css" />
+      <!-- Font Awesome Cdn Link -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+    </head>
+    <body>
+      <div id="success" class="success"></div>
+      <div id="error" class="error"></div>
+
+      <nav class="navbar">
+        <img src="../images/blue-logo.png" class="logo" alt="" />
+        <ul class="links-container">
+          <li class="link-item"><a href="./home.html" class="link">HOME</a></li>
+          <li class="link-item">
+            <a href="./post.html" class="link">CREATE</a>
+          </li>
+          <li class="link-item">
+            <a href="./mypost.html" class="link">POSTS</a>
+          </li>
+        </ul>
+        <ul class="links-container">
+          <button class="logout" id="logout">LOGOUT</button>
+        </ul>
+      </nav>
+
+      <div class="component">
+        <div class="post-wrapper">
+          <h2>Add Post</h2>
+
+          <!-- <p>
+            Welcome back you've <br />
+            been missed!
+          </p> -->
+          <form>
+            <div class="banner">
+              <input
+                type="file"
+                accept="image/*"
+                id="banner-upload"
+                class="banneru"
+              />
+              <!-- <label for="banner-upload" class="banner-upload-btn"
+                ><img src="../images/upload.png" alt="upload banner"
+              /></label> -->
+              <img id="banner-preview" alt="" class="uploaded" src="" />
+            </div>
+            <input type="text" placeholder="Enter title" id="title" />
+            <textarea
+              type="text"
+              id="body"
+              placeholder="Start writing here..."
+            ></textarea>
+          </form>
+          <button id="submit-btn">Post</button>
+        </div>
+      </div>
+
+      <script type="module" src="../js/post.js"></script>
+    </body>
+  </html>
+</span>

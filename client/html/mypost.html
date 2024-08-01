@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movieger</title>
+    <!-- Box-icon -->
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+      anonymous
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+  </head>
+  <body>
+    <div id="success" class="success"></div>
+    <div id="error" class="error"></div>
+
+    <nav class="navbar">
+      <img src="../images/blue-logo.png" class="hm-logo" alt="" />
+      <ul class="links-container">
+        <li class="link-item"><a href="./home.html" class="link">HOME</a></li>
+        <li class="link-item">
+          <a href="./post.html" class="link">CREATE</a>
+        </li>
+      </ul>
+      <ul class="links-container">
+        <button class="logout" id="logout">LOGOUT</button>
+      </ul>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="home-text container">
+        <h2 class="home-title">My Movie Posts</h2>
+        <span class="home-subtitle">Your source of great movies</span>
+      </div>
+    </section>
+
+    <div class="post container" id="movies-section">
+      <!-- Post 1 -->
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="sec aboutus">
+          <h2>About Us</h2>
+          <p>
+            Your go-to destination for movie reviews, news, and insights. Dive
+            into the world of cinema with us!.
+          </p>
+          <ul class="sci">
+            <li>
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="sec contactBx">
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><i class="bx bxs-map"></i></span>
+              <span
+                >London Univerisity <br />
+                Brighton <br />
+                Uk</span
+              >
+            </li>
+            <li>
+              <span><i class="bx bx-envelope"></i></span>
+              <p>
+                <a href="mailto:bb@gmail.com">bb@uea.ac.uk</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/mypost.js"></script>
+  </body>
+</html>

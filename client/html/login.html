@@ -1,0 +1,56 @@
+<span style="font-family: verdana, geneva, sans-serif"
+  ><!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Login form</title>
+      <link rel="stylesheet" href="../css/auth.css" />
+      <!-- Font Awesome Cdn Link -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+    </head>
+    <body>
+      <div id="success" class="success"></div>
+      <div id="error" class="error"></div>
+
+      <nav class="navbar">
+        <img src="../images/blue-logo.png" class="logo" alt="" />
+        <ul class="links-container">
+          <li class="link-item"><a href="./home.html" class="link">HOME</a></li>
+          <li class="link-item">
+            <a href="./register.html" class="link">SIGN UP</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="component">
+        <div class="wrapper">
+          <h1>Sign In!</h1>
+          <p>
+            Welcome back you've <br />
+            been missed!
+          </p>
+          <form>
+            <input type="email" placeholder="Email" id="email" />
+            <div id="emailErr" class="errorField"></div>
+            <input type="password" placeholder="Password" id="password" />
+            <div id="passwordErr" class="errorField"></div>
+            <p class="recover">
+              <a href="./forgot.html">Recover Password</a>
+            </p>
+          </form>
+
+          <button id="submit-btn">Sign in</button>
+
+          <div class="not-member">
+            Not a member? <a href="./register.html">Register Now</a>
+          </div>
+        </div>
+      </div>
+
+      <script type="module" src="../js/login.js"></script>
+    </body>
+  </html>
+</span>
